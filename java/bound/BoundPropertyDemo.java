@@ -14,7 +14,7 @@ public class BoundPropertyDemo {
                         + "' to '" + event.getNewValue() + "'");
 
         person.addPropertyChangeListener(listener);
-        person.setName("Ravi");
-        person.setName("Rina");
+        person.setName("anas111");
+        person.setName("anas222");
     }
 }
