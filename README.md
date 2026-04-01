@@ -19,24 +19,25 @@ This repository contains:
 - `java/bound/`
 - `java/constrained/`
 
-## Run Web Page
+## How to Run (For Instructor)
 
-Open `web/index.html` in any browser.
+1. Open the webpage:
 
-## Compile Java
-
-From repository root:
-
-```bash
-cd java
-javac beans/*.java beaninfo/*.java bound/*.java constrained/*.java
+```powershell
+cd web
+start index.html
 ```
 
-## Run Java Main Classes
+2. Compile all Java files (from repository root):
 
-From `java` directory:
+```powershell
+cd java
+javac (Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+```
 
-```bash
+3. Run each JavaBeans demo (from `java` folder):
+
+```powershell
 java beans.BeansDemo
 java beaninfo.BeanInfoDemo
 java bound.BoundPropertyDemo
